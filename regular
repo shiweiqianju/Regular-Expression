@@ -47,6 +47,10 @@
                  'this is byroncasper byronsper byrcasper data'.replace(/byr(on|ca)sper/gi,'0') ==> this is byroncasper 0 0 data;
     反向引用，如： 需要 2015-12-06 ==> 12/06/2015,
                       '2015-12-06'.replace(/(\d{4})-(\d{2})-(\d{2})/g,'$2/$3/$1');
+                      
+6.前瞻：（类似于css中带特定条件的选择器）
+    正则表达式从文本头部先向尾部解析，文本尾部方向即为"前"；
+    ![image](https://github.com/shiweiqianju/Regular-Expression/raw/master/images/前瞻.jpg)
 n.元字符
     \n        换行
     \r        回车
